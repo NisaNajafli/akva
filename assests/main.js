@@ -51,3 +51,16 @@ window.addEventListener("scroll", function () {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+let services = new Swiper(".directionSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 25,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
