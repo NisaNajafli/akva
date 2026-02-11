@@ -20,6 +20,7 @@
 }
 a {
   text-decoration: none;
+  color: #333
 }
 
 ul {
@@ -295,6 +296,16 @@ header{
 .hero-btn:hover span{
   color: var(--green)
 }
+.all_posts{
+  border-radius:var(--br-s) !important;
+  background-color: var(--blue) !important;
+  border-color: var(--blue) !important
+}
+.all_posts .all_posts_icon_wrapper{
+  background-color: var(--green) !important;
+  color: #fff !important;
+  border-radius: var(--br-s) !important
+}
 .hero-nav {
   position: absolute;
   bottom: 5%;
@@ -304,19 +315,18 @@ header{
 }
 
 .hero-nav button {
-  width: 44px;
-  height: 44px;
-  border-radius: var(--br-m);
-  background: rgba(255,255,255,.15);
-  color: #fff;
-  font-size: 30px;
-  cursor: pointer;
-  border: 1px solid #e4e8ed87;
-  transition: .3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  width: 50px;
+    height: 50px;
+    border-radius: var(--br-m);
+    background: rgba(255, 255, 255, .15);
+    color: #fff;
+    font-size: 34px;
+    cursor: pointer;
+    border: 1px solid #e4e8ed87;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-nav button:hover {
@@ -491,6 +501,10 @@ header{
   align-items:center;
   padding: 0 20px;
 }
+.advantage svg{
+  width: 40px;
+  height: 40px;
+}
 
 .advantage:hover {
   background-color: var(--green);
@@ -527,7 +541,14 @@ header{
   }
 }
 
-
+#map{
+  height: 400px;
+  width: 100%;
+  border-radius: var(--br-l)
+}
+#map{
+  border-radius: var(--br-l)
+}
 
 
 .adv-icon {
@@ -751,7 +772,7 @@ header{
 
 
 .cta-section {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
 }
 
 .cta-container {
