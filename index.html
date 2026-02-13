@@ -13,6 +13,37 @@
   </head>
 
   <body>
+    <div class="modal-overlay" data-modal-overlay></div>
+
+    <div class="custom-modal" data-modal>
+      <button class="modal-close" data-modal-close>&times;</button>
+
+      <h2 class="modal-title">Оставить заявку</h2>
+      <p class="modal-text">
+        Заполните форму, и наш специалист свяжется с вами в ближайшее время.
+      </p>
+
+      <form class="modal-form">
+        <div class="form-group">
+          <label>Имя</label>
+          <input type="text" placeholder="Ваше имя" required />
+        </div>
+
+        <div class="form-group">
+          <label>Tелефон</label>
+          <input type="tel" placeholder="Ваше телефона" required />
+        </div>
+
+        <div class="form-group">
+          <label>Сообщение</label>
+          <textarea placeholder="Введите сообщение" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn">
+          <span>Отправить</span>
+        </button>
+      </form>
+    </div>
     <header id="top">
       <div class="container">
         <div class="header">
@@ -51,11 +82,10 @@
           </div>
           <nav>
             <ul class="main-nav">
-              <li><a href="#top">Главная</a></li>
               <li><a href="#about">О нас</a></li>
               <li><a href="#services">Услуги</a></li>
-              <li><a href="#texts">Статьи</a></li>
-              <li><a href="#faq">Вопросы и ответы</a></li>
+              <li><a href="#texts">Оборудование</a></li>
+              <li><a href="#directions">Направления</a></li>
               <li><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
@@ -85,7 +115,229 @@
             </svg>
             akvainvest@inbox.ru
           </a>
+          <div id="open_menu" class="burger_btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="27"
+              height="27"
+              x="0"
+              y="0"
+              viewBox="0 0 20 20"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  fill="currentColor"
+                  d="M19 11H1a1 1 0 0 1 0-2h18a1 1 0 1 1 0 2zm0-7H1a1 1 0 0 1 0-2h18a1 1 0 1 1 0 2zm0 14H1a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2z"
+                  opacity="1"
+                  data-original="#000000"
+                ></path>
+              </g>
+            </svg>
+          </div>
         </div>
+      </div>
+      </div>
+      <div id="menu_overlay"></div>
+      <div class="mobile__menu">
+        <div id="close_menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="15"
+            height="15"
+            x="0"
+            y="0"
+            viewBox="0 0 512 512"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            class=""
+          >
+            <g>
+              <g data-name="02 User">
+                <path
+                  d="M25 512a25 25 0 0 1-17.68-42.68l462-462a25 25 0 0 1 35.36 35.36l-462 462A24.93 24.93 0 0 1 25 512z"
+                  fill="#000000"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></path>
+                <path
+                  d="M487 512a24.93 24.93 0 0 1-17.68-7.32l-462-462A25 25 0 0 1 42.68 7.32l462 462A25 25 0 0 1 487 512z"
+                  fill="#000000"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <ul class="header__links">
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#texts">Оборудование</a></li>
+          <li><a href="#directions">Направления</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="contact-social">
+                  <a href="https://yandex.com/maps/-/CPQoBC4~" target="_blank" class="contact-social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="M341.476 338.285c54.483-85.493 47.634-74.827 49.204-77.056C410.516 233.251 421 200.322 421 166 421 74.98 347.139 0 256 0 165.158 0 91 74.832 91 166c0 34.3 10.704 68.091 31.19 96.446l48.332 75.84C118.847 346.227 31 369.892 31 422c0 18.995 12.398 46.065 71.462 67.159C143.704 503.888 198.231 512 256 512c108.025 0 225-30.472 225-90 0-52.117-87.744-75.757-139.524-83.715zm-194.227-92.34a15.57 15.57 0 0 0-.517-.758C129.685 221.735 121 193.941 121 166c0-75.018 60.406-136 135-136 74.439 0 135 61.009 135 136 0 27.986-8.521 54.837-24.646 77.671-1.445 1.906 6.094-9.806-110.354 172.918L147.249 245.945zM256 482c-117.994 0-195-34.683-195-60 0-17.016 39.568-44.995 127.248-55.901l55.102 86.463a14.998 14.998 0 0 0 25.298 0l55.101-86.463C411.431 377.005 451 404.984 451 422c0 25.102-76.313 60-195 60z"
+                      fill="#fff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                    <path
+                      d="M256 91c-41.355 0-75 33.645-75 75s33.645 75 75 75 75-33.645 75-75-33.645-75-75-75zm0 120c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z"
+                      fill="#fff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/74732287410"
+                target="_blank"
+                rel="noopener"
+                class="contact-social-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"
+                      fill="#fffefe"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                    <path
+                      d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 0 1 7.021 2.91 9.788 9.788 0 0 1 2.909 6.99z"
+                      fill="#fffefe"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="" class="contact-social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"
+                      fill="#ffffff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:akvainvest@inbox.ru" class="contact-social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="M467 76H45C20.238 76 0 96.149 0 121v270c0 24.86 20.251 45 45 45h422c24.762 0 45-20.149 45-45V121c0-24.857-20.248-45-45-45zm-6.91 30L267.624 299.094c-5.864 5.882-17.381 5.886-23.248 0L51.91 106h408.18zM30 385.485v-258.97L159.065 256 30 385.485zM51.91 406l128.334-128.752 42.885 43.025c17.574 17.631 48.175 17.624 65.743 0l42.885-43.024L460.09 406H51.91zM482 385.485 352.935 256 482 126.515v258.97z"
+                      fill="#ffffff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="tel:+74732287410" class="contact-social-link">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="512"
+                    height="512"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 322 322"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M275.445 135.123c.387-45.398-38.279-87.016-86.192-92.771-.953-.113-1.991-.285-3.09-.467-2.372-.393-4.825-.797-7.3-.797-9.82 0-12.445 6.898-13.136 11.012-.672 4-.031 7.359 1.902 9.988 3.252 4.422 8.974 5.207 13.57 5.836 1.347.186 2.618.359 3.682.598 43.048 9.619 57.543 24.742 64.627 67.424.173 1.043.251 2.328.334 3.691.309 5.102.953 15.717 12.365 15.717h.001c.95 0 1.971-.082 3.034-.244 10.627-1.615 10.294-11.318 10.134-15.98-.045-1.313-.088-2.555.023-3.381.03-.208.045-.417.046-.626z"
+                        fill="#fff"
+                        opacity="1"
+                        data-original="#000000"
+                        class=""
+                      ></path>
+                      <path
+                        d="M176.077 25.688c1.275.092 2.482.18 3.487.334 70.689 10.871 103.198 44.363 112.207 115.605.153 1.211.177 2.688.202 4.252.09 5.566.275 17.145 12.71 17.385l.386.004c3.9 0 7.002-1.176 9.221-3.498 3.871-4.049 3.601-10.064 3.383-14.898-.053-1.186-.104-2.303-.091-3.281.899-72.862-62.171-138.933-134.968-141.39-.302-.01-.59.006-.881.047a6.09 6.09 0 0 1-.862.047c-.726 0-1.619-.063-2.566-.127C177.16.09 175.862 0 174.546 0c-11.593 0-13.797 8.24-14.079 13.152-.65 11.352 10.332 12.151 15.61 12.536zM288.36 233.703a224.924 224.924 0 0 1-4.512-3.508c-7.718-6.211-15.929-11.936-23.87-17.473a1800.92 1800.92 0 0 1-4.938-3.449c-10.172-7.145-19.317-10.617-27.957-10.617-11.637 0-21.783 6.43-30.157 19.109-3.71 5.621-8.211 8.354-13.758 8.354-3.28 0-7.007-.936-11.076-2.783-32.833-14.889-56.278-37.717-69.685-67.85-6.481-14.564-4.38-24.084 7.026-31.832 6.477-4.396 18.533-12.58 17.679-28.252-.967-17.797-40.235-71.346-56.78-77.428-7.005-2.576-14.365-2.6-21.915-.06-19.02 6.394-32.669 17.623-39.475 32.471-6.577 14.347-6.28 31.193.859 48.717 20.638 50.666 49.654 94.84 86.245 131.293 35.816 35.684 79.837 64.914 130.839 86.875 4.597 1.978 9.419 3.057 12.94 3.844 1.2.27 2.236.5 2.991.707.415.113.843.174 1.272.178l.403.002h.002c23.988 0 52.791-21.92 61.637-46.91 7.75-21.882-6.4-32.698-17.77-41.388zM186.687 83.564c-4.107.104-12.654.316-15.653 9.021-1.403 4.068-1.235 7.6.5 10.498 2.546 4.252 7.424 5.555 11.861 6.27 16.091 2.582 24.355 11.48 26.008 28 .768 7.703 5.955 13.082 12.615 13.082h.001c.492 0 .995-.029 1.496-.09 8.01-.953 11.893-6.838 11.542-17.49.128-11.117-5.69-23.738-15.585-33.791-9.929-10.084-21.898-15.763-32.785-15.5z"
+                        fill="#fff"
+                        opacity="1"
+                        data-original="#000000"
+                        class=""
+                      ></path>
+                    </g>
+                  </svg>
+              </a>
+                </div>
+        <a  class="btn" data-modal-open>Оставить заявку</a>
       </div>
     </header>
     <main>
@@ -243,7 +495,7 @@
                     href=""
                     target="_blank"
                     class="all_posts hero-btn"
-                    style="--clr: #157360"
+                    style="--clr: #157360" data-modal-open
                   >
                     <span class="all_posts_icon_wrapper">
                       <svg
@@ -299,7 +551,7 @@
                     href=""
                     target="_blank"
                     class="all_posts hero-btn"
-                    style="--clr: #157360"
+                    style="--clr: #157360" data-modal-open
                   >
                     <span class="all_posts_icon_wrapper">
                       <svg
@@ -364,8 +616,8 @@
               <a
                 href=""
                 target="_blank"
-                class="all_posts"
-                style="--clr: #157360"
+                class="all_posts desktop"
+                style="--clr: #157360" data-modal-open
               >
                 <span class="all_posts_icon_wrapper">
                   <svg
@@ -558,6 +810,40 @@
                 </a>
               </div>
             </div>
+            <a
+                href=""
+                target="_blank"
+                class="all_posts mobile"
+                style="--clr: #157360" data-modal-open
+              >
+                <span class="all_posts_icon_wrapper">
+                  <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg"
+                    width="10"
+                  >
+                    <path
+                      d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    width="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg button__icon-svg--copy"
+                  >
+                    <path
+                      d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </span>
+                Получить консультацию
+              </a>
           </div>
         </div>
       </section>
@@ -1537,7 +1823,7 @@
               не создавать хаос.
             </p>
           </div>
-          <a href="" target="_blank" class="all_posts" style="--clr: #157360">
+          <a data-modal-open target="_blank" class="all_posts" style="--clr: #157360" data-modal-open>
             <span class="all_posts_icon_wrapper">
               <svg
                 viewBox="0 0 14 15"
@@ -1584,7 +1870,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -1628,7 +1914,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -1672,7 +1958,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -1716,7 +2002,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -1760,7 +2046,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -1804,7 +2090,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -1848,7 +2134,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -1892,7 +2178,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -1936,7 +2222,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -1977,7 +2263,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -2021,7 +2307,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -2065,7 +2351,7 @@
                   href=""
                   target="_blank"
                   class="all_posts"
-                  style="--clr: #157360"
+                  style="--clr: #157360" data-modal-open
                 >
                   <span class="all_posts_icon_wrapper">
                     <svg
@@ -2219,23 +2505,6 @@
               </div>
             </div>
 
-            <div
-              class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
-            >
-              <span
-                class="swiper-pagination-bullet"
-                tabindex="0"
-                role="button"
-                aria-label="Go to slide 1"
-              ></span>
-              <span
-                class="swiper-pagination-bullet swiper-pagination-bullet-active"
-                tabindex="0"
-                role="button"
-                aria-label="Go to slide 2"
-                aria-current="true"
-              ></span>
-            </div>
 
             <span
               class="swiper-notification"
@@ -2244,7 +2513,7 @@
             ></span>
           </div>
 
-          <div class="navigation-btn">
+          <!-- <div class="navigation-btn">
             <div
               class="swiper-button-next"
               tabindex="0"
@@ -2290,10 +2559,10 @@
                 ></path>
               </svg>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
-      <section class="projects-section">
+      <section id="projects" class="projects-section">
         <div class="container">
           <h2 class="section-title">Реализованные проекты</h2>
 
@@ -2416,6 +2685,180 @@
               <div class="project-overlay">
                 <h3>Водозабор Липецкой обл.</h3>
                 <p>Станция водоподготовки производительностью 240 м³/ч</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="second-section">
+        <div class="container">
+          <div class="second-section__inner">
+            <!-- Left Card: Product Rating -->
+            <div class="card">
+              <div class="card-content">
+                <div>
+                  <div>
+                    <h2 class="card-title">
+                       Выполнено более 125 объектов
+                    </h2>
+                    <p class="card-subtitle">
+                      Полный перечень с отзывами можно запросить по почте
+                    </p>
+                  </div>
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#price-form"
+                    class="card-button card-button-learn"
+                  >
+                    <span class="button-children" data-modal-open
+                      >Онлайн-запрос</span
+                    >
+                  </a>
+                </div>
+
+                <div class="stars-wrapper">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/022/877/510/non_2x/3d-icon-of-contact-free-png.png"
+                    alt="Stars"
+                    class="stars-image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Card: Contact Center -->
+            <div class="card">
+              <div class="card-content">
+                <h2 class="card-title">Свяжитесь с нами</h2>
+                <p class="card-subtitle">Мы к вашим услугам 24/7</p>
+
+                <div>
+                  <a href="tel:+79013039222" class="contact-phone"
+                    > +7 473 228-74-10
+                  </a>
+                </div>
+                <div class="contact-social">
+                  <a href="https://yandex.com/maps/-/CPQoBC4~" target="_blank" class="contact-social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="M341.476 338.285c54.483-85.493 47.634-74.827 49.204-77.056C410.516 233.251 421 200.322 421 166 421 74.98 347.139 0 256 0 165.158 0 91 74.832 91 166c0 34.3 10.704 68.091 31.19 96.446l48.332 75.84C118.847 346.227 31 369.892 31 422c0 18.995 12.398 46.065 71.462 67.159C143.704 503.888 198.231 512 256 512c108.025 0 225-30.472 225-90 0-52.117-87.744-75.757-139.524-83.715zm-194.227-92.34a15.57 15.57 0 0 0-.517-.758C129.685 221.735 121 193.941 121 166c0-75.018 60.406-136 135-136 74.439 0 135 61.009 135 136 0 27.986-8.521 54.837-24.646 77.671-1.445 1.906 6.094-9.806-110.354 172.918L147.249 245.945zM256 482c-117.994 0-195-34.683-195-60 0-17.016 39.568-44.995 127.248-55.901l55.102 86.463a14.998 14.998 0 0 0 25.298 0l55.101-86.463C411.431 377.005 451 404.984 451 422c0 25.102-76.313 60-195 60z"
+                      fill="#fff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                    <path
+                      d="M256 91c-41.355 0-75 33.645-75 75s33.645 75 75 75 75-33.645 75-75-33.645-75-75-75zm0 120c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z"
+                      fill="#fff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/74732287410"
+                target="_blank"
+                rel="noopener"
+                class="contact-social-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"
+                      fill="#fffefe"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                    <path
+                      d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 0 1 7.021 2.91 9.788 9.788 0 0 1 2.909 6.99z"
+                      fill="#fffefe"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="" class="contact-social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"
+                      fill="#ffffff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:akvainvest@inbox.ru" class="contact-social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="M467 76H45C20.238 76 0 96.149 0 121v270c0 24.86 20.251 45 45 45h422c24.762 0 45-20.149 45-45V121c0-24.857-20.248-45-45-45zm-6.91 30L267.624 299.094c-5.864 5.882-17.381 5.886-23.248 0L51.91 106h408.18zM30 385.485v-258.97L159.065 256 30 385.485zM51.91 406l128.334-128.752 42.885 43.025c17.574 17.631 48.175 17.624 65.743 0l42.885-43.024L460.09 406H51.91zM482 385.485 352.935 256 482 126.515v258.97z"
+                      fill="#ffffff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+
+                </div>
               </div>
             </div>
           </div>
@@ -2604,181 +3047,7 @@
           </div>
         </div>
       </section>
-      <section class="second-section">
-        <div class="container">
-          <div class="second-section__inner">
-            <!-- Left Card: Product Rating -->
-            <div class="card">
-              <div class="card-content">
-                <div>
-                  <div>
-                    <h2 class="card-title">
-                       Выполнено более 125 объектов
-                    </h2>
-                    <p class="card-subtitle">
-                      Полный перечень с отзывами можно запросить по почте
-                    </p>
-                  </div>
-                  <a
-                    data-bs-toggle="modal"
-                    data-bs-target="#price-form"
-                    class="card-button card-button-learn"
-                  >
-                    <span class="button-children" data-modal-open
-                      >Онлайн-запрос</span
-                    >
-                  </a>
-                </div>
-
-                <div class="stars-wrapper">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/previews/022/877/510/non_2x/3d-icon-of-contact-free-png.png"
-                    alt="Stars"
-                    class="stars-image"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- Right Card: Contact Center -->
-            <div class="card">
-              <div class="card-content">
-                <h2 class="card-title">Свяжитесь с нами</h2>
-                <p class="card-subtitle">Мы к вашим услугам 24/7</p>
-
-                <div>
-                  <a href="tel:+79013039222" class="contact-phone"
-                    > +7 473 228-74-10
-                  </a>
-                </div>
-                <div class="contact-social">
-                  <a href="https://yandex.com/maps/-/CPQoBC4~" target="_blank" class="contact-social-link">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="512"
-                  height="512"
-                  x="0"
-                  y="0"
-                  viewBox="0 0 512 512"
-                  style="enable-background: new 0 0 512 512"
-                  xml:space="preserve"
-                  class=""
-                >
-                  <g>
-                    <path
-                      d="M341.476 338.285c54.483-85.493 47.634-74.827 49.204-77.056C410.516 233.251 421 200.322 421 166 421 74.98 347.139 0 256 0 165.158 0 91 74.832 91 166c0 34.3 10.704 68.091 31.19 96.446l48.332 75.84C118.847 346.227 31 369.892 31 422c0 18.995 12.398 46.065 71.462 67.159C143.704 503.888 198.231 512 256 512c108.025 0 225-30.472 225-90 0-52.117-87.744-75.757-139.524-83.715zm-194.227-92.34a15.57 15.57 0 0 0-.517-.758C129.685 221.735 121 193.941 121 166c0-75.018 60.406-136 135-136 74.439 0 135 61.009 135 136 0 27.986-8.521 54.837-24.646 77.671-1.445 1.906 6.094-9.806-110.354 172.918L147.249 245.945zM256 482c-117.994 0-195-34.683-195-60 0-17.016 39.568-44.995 127.248-55.901l55.102 86.463a14.998 14.998 0 0 0 25.298 0l55.101-86.463C411.431 377.005 451 404.984 451 422c0 25.102-76.313 60-195 60z"
-                      fill="#fff"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                    <path
-                      d="M256 91c-41.355 0-75 33.645-75 75s33.645 75 75 75 75-33.645 75-75-33.645-75-75-75zm0 120c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z"
-                      fill="#fff"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-              <a
-                href="https://wa.me/74732287410"
-                target="_blank"
-                rel="noopener"
-                class="contact-social-link"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="512"
-                  height="512"
-                  x="0"
-                  y="0"
-                  viewBox="0 0 24 24"
-                  style="enable-background: new 0 0 512 512"
-                  xml:space="preserve"
-                  class=""
-                >
-                  <g>
-                    <path
-                      d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"
-                      fill="#fffefe"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                    <path
-                      d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 0 1 7.021 2.91 9.788 9.788 0 0 1 2.909 6.99z"
-                      fill="#fffefe"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-              <a href="" class="contact-social-link">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="512"
-                  height="512"
-                  x="0"
-                  y="0"
-                  viewBox="0 0 24 24"
-                  style="enable-background: new 0 0 512 512"
-                  xml:space="preserve"
-                  class=""
-                >
-                  <g>
-                    <path
-                      d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"
-                      fill="#ffffff"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-              <a href="mailto:akvainvest@inbox.ru" class="contact-social-link">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="512"
-                  height="512"
-                  x="0"
-                  y="0"
-                  viewBox="0 0 512 512"
-                  style="enable-background: new 0 0 512 512"
-                  xml:space="preserve"
-                  class=""
-                >
-                  <g>
-                    <path
-                      d="M467 76H45C20.238 76 0 96.149 0 121v270c0 24.86 20.251 45 45 45h422c24.762 0 45-20.149 45-45V121c0-24.857-20.248-45-45-45zm-6.91 30L267.624 299.094c-5.864 5.882-17.381 5.886-23.248 0L51.91 106h408.18zM30 385.485v-258.97L159.065 256 30 385.485zM51.91 406l128.334-128.752 42.885 43.025c17.574 17.631 48.175 17.624 65.743 0l42.885-43.024L460.09 406H51.91zM482 385.485 352.935 256 482 126.515v258.97z"
-                      fill="#ffffff"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contacts" class="cta-section">
+      <section  class="cta-section">
         <div class="cta-container">
           <div class="cta-bg"></div>
           <div class="cta-overlay"></div>
@@ -2788,7 +3057,8 @@
               <p class="cta-worktime">
                 Время работы колл-центра:
                 <a href="tel:+74732287410" class="cta-phone"
-                  ><svg
+                  >
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -2870,7 +3140,7 @@
                 <input type="checkbox" required />
                 <span></span>
                 Я согласен(а) с обработкой персональных данных и
-                <a href="#">политикой конфиденциальности</a>
+                
               </label>
 
               <button type="submit" class="btn">ОТПРАВИТЬ</button>

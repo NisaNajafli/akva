@@ -59,8 +59,67 @@ let services = new Swiper(".directionSwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+   breakpoints: {
+     0: { slidesPerView: 1 },
+      576: { slidesPerView: 2 },
+      992: { slidesPerView: 4 }
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const openBtn = document.getElementById("open_menu");
+  const closeBtn = document.getElementById("close_menu");
+  const menu = document.querySelector(".mobile__menu");
+  const overlay = document.getElementById("menu_overlay");
+  const menuLinks = document.querySelectorAll(".mobile__menu a");
+
+  function openMenu() {
+    menu.classList.add("is-open");
+    overlay.classList.add("is-active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeMenu() {
+    menu.classList.remove("is-open");
+    overlay.classList.remove("is-active");
+    document.body.style.overflow = "";
+  }
+
+  openBtn.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", closeMenu);
+  overlay.addEventListener("click", closeMenu);
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+});
+
+
+const openBtns = document.querySelectorAll('[data-modal-open]');
+const modal = document.querySelector('[data-modal]');
+const overlay = document.querySelector('[data-modal-overlay]');
+const closeBtn = document.querySelector('[data-modal-close]');
+
+function openModal(e) {
+  e.preventDefault();
+  modal.classList.add('is-active');
+  overlay.classList.add('is-active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.classList.remove('is-active');
+  overlay.classList.remove('is-active');
+  document.body.style.overflow = '';
+}
+
+openBtns.forEach(btn => {
+  btn.addEventListener('click', openModal);
+});
+
+overlay.addEventListener('click', closeModal);
+closeBtn.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
 });
