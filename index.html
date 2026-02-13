@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="/assests/css/style.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <header>
+    <header id="top">
       <div class="container">
         <div class="header">
           <div class="location">
@@ -50,12 +51,12 @@
           </div>
           <nav>
             <ul class="main-nav">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Статьи</a></li>
-              <li><a href="">Вопросы и ответы</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#top">Главная</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#texts">Статьи</a></li>
+              <li><a href="#faq">Вопросы и ответы</a></li>
+              <li><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
           <a href="mailto:akvainvest@inbox.ru">
@@ -270,7 +271,7 @@
                         ></path>
                       </svg>
                     </span>
-                    Получить стратегию
+                    Получить консультацию
                   </a>
                   <!-- <a href="#" class="hero-btn">
                     <i>↗</i>
@@ -294,9 +295,39 @@
                   </h1>
                   <p class="hero-subtitle">ПРОЗРАЧНАЯ МОДЕЛЬ УПРАВЛЕНИЯ</p>
                   <p class="hero-desc">Выстраиваем процессы и точки роста</p>
-                  <a href="#" class="hero-btn">
-                    <i>↗</i>
-                    <span>Обсудить проект</span>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="all_posts hero-btn"
+                    style="--clr: #157360"
+                  >
+                    <span class="all_posts_icon_wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                    Получить консультацию
                   </a>
                 </div>
               </div>
@@ -310,7 +341,7 @@
           <button class="hero-next">›</button>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
           <div class="about-inner">
             <!-- LEFT: TEXT -->
@@ -321,8 +352,9 @@
                 архитекторов бизнес-процессов. Мы соединяем стратегию,
                 управление и внедрение, чтобы решения работали в реальности, а
                 не в презентациях. Над каждым проектом работает команда
-                стратегов, аналитиков и архитекторов бизнес-процессов. Мы
-                соединяем стратегию, управление и внедрение, чтобы решения
+                стратегов, аналитиков и архитекторов бизнес-процессов.
+                <br /><br />
+                Мы соединяем стратегию, управление и внедрение, чтобы решения
                 работали в реальности, а не в презентациях.Над каждым проектом
                 работает команда стратегов, аналитиков и архитекторов
                 бизнес-процессов. Мы соединяем стратегию, управление и
@@ -361,7 +393,7 @@
                     ></path>
                   </svg>
                 </span>
-                Подробнее
+                Получить консультацию
               </a>
             </div>
 
@@ -529,7 +561,7 @@
           </div>
         </div>
       </section>
-      <section class="services-section">
+      <section id="services" class="services-section">
         <div class="container">
           <h2 class="section-title">Услуги</h2>
           <div class="services-grid">
@@ -545,8 +577,9 @@
                     <h3>Промышленная водоочистка</h3>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Error, id dolore.
+                    Проектируем и внедряем системы промышленной очистки воды для
+                    производства, обеспечивая стабильное качество и соответствие
+                    нормам.
                   </p>
                 </div>
               </div>
@@ -566,8 +599,9 @@
                     </div>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Alias, dolorem dolores?
+                    Подбираем и настраиваем оборудование под ваши
+                    технологические процессы, обеспечивая надёжную и
+                    бесперебойную водоочистку.
                   </p>
                 </div>
               </div>
@@ -585,8 +619,9 @@
                     <h3>Проектирование водоочистных комплексов</h3>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse, repellendus illo.
+                    Разрабатываем проекты водоочистных комплексов «под ключ»: от
+                    гидравлических расчётов до рабочей документации и авторского
+                    сопровождения.
                   </p>
                 </div>
               </div>
@@ -604,8 +639,8 @@
                     <h3>Монтаж и запуск систем очистки воды</h3>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Cupiditate, quisquam veritatis.
+                    Выполняем монтаж, обвязку и пусконаладку систем очистки воды
+                    с гарантией корректной работы всего комплекса.
                   </p>
                 </div>
               </div>
@@ -623,8 +658,9 @@
                     <h3>Модернизация и автоматизация водных систем</h3>
                   </div>
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Debitis, est accusantium?
+                    Обновляем существующие системы, внедряем автоматизацию и
+                    дистанционный контроль для снижения затрат и повышения
+                    надёжности.
                   </p>
                 </div>
               </div>
@@ -642,8 +678,9 @@
                     <h3>Сервисное обслуживание и аудит оборудования</h3>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aperiam, quo eligendi.
+                    Проводим регулярное сервисное обслуживание, диагностику и
+                    аудит оборудования, чтобы система работала без простоев и
+                    аварий.
                   </p>
                 </div>
               </div>
@@ -651,7 +688,6 @@
           </div>
         </div>
       </section>
-
       <section id="advantages">
         <div class="container">
           <div
@@ -1411,7 +1447,7 @@
               </div>
             </div>
 
-            <a href="" target="_blank" class="all_posts" style="--clr: #157360">
+            <a href="" target="_blank" class="all_posts" style="--clr: #0dcbb8">
               <span class="all_posts_icon_wrapper">
                 <svg
                   viewBox="0 0 14 15"
@@ -1449,7 +1485,7 @@
               alt="Business"
             />
 
-            <a href="" target="_blank" class="all_posts" style="--clr: #157360">
+            <a href="" target="_blank" class="all_posts" style="--clr: #0dcbb8">
               <span class="all_posts_icon_wrapper">
                 <svg
                   viewBox="0 0 14 15"
@@ -2088,7 +2124,10 @@
               >
                 <div>
                   <div class="services-img">
-                    <img src="https://главжкх.рф/upload/iblock/4c3/65u80krqxrtfzyn6qp1eloep7zkj19xu.webp" alt="" />
+                    <img
+                      src="https://главжкх.рф/upload/iblock/4c3/65u80krqxrtfzyn6qp1eloep7zkj19xu.webp"
+                      alt=""
+                    />
                   </div>
                   <h4>Водоканалы и ЖКХ</h4>
                 </div>
@@ -2102,7 +2141,10 @@
               >
                 <div>
                   <div class="services-img">
-                    <img src="https://aquaworld63.ru/upload/iblock/064/k0v5fzq6gzg170awzobigspycfpfp8ms.jpg" alt="" />
+                    <img
+                      src="https://aquaworld63.ru/upload/iblock/064/k0v5fzq6gzg170awzobigspycfpfp8ms.jpg"
+                      alt=""
+                    />
                   </div>
                   <h4>Водоподготовка для котельных</h4>
                 </div>
@@ -2116,7 +2158,10 @@
               >
                 <div>
                   <div class="services-img">
-                    <img src="https://www.pharmsystems.ru/upload/iblock/655/rlyag25jzjb9h6067au01bcjgkspbvzt/Pishchevaya_anons.jpg" alt="" />
+                    <img
+                      src="https://www.pharmsystems.ru/upload/iblock/655/rlyag25jzjb9h6067au01bcjgkspbvzt/Pishchevaya_anons.jpg"
+                      alt=""
+                    />
                   </div>
                   <h4>Пищевая промышленность</h4>
                 </div>
@@ -2130,7 +2175,10 @@
               >
                 <div>
                   <div class="services-img">
-                    <img src="https://eneca.ru/upload/resize_cache/slam/cf3/022/1200_800_85/11-_2_.png" alt="" />
+                    <img
+                      src="https://eneca.ru/upload/resize_cache/slam/cf3/022/1200_800_85/11-_2_.png"
+                      alt=""
+                    />
                   </div>
                   <h4>Теплоснабжение</h4>
                 </div>
@@ -2144,7 +2192,10 @@
               >
                 <div>
                   <div class="services-img">
-                    <img src="https://miringgroup.com/wp-content/uploads/2024/08/360_f_780544797_7zkd8fugcaghrkzpyldkv8xc27zxhjsq.jpg" alt="" />
+                    <img
+                      src="https://miringgroup.com/wp-content/uploads/2024/08/360_f_780544797_7zkd8fugcaghrkzpyldkv8xc27zxhjsq.jpg"
+                      alt=""
+                    />
                   </div>
                   <h4>Проектирование</h4>
                 </div>
@@ -2158,7 +2209,10 @@
               >
                 <div>
                   <div class="services-img">
-                    <img src="https://climatstar.ru/upload/iblock/cb0/7jj33nfb21yncsi8k0cm2ufh1df0wjvo.jpg" alt="" />
+                    <img
+                      src="https://climatstar.ru/upload/iblock/cb0/7jj33nfb21yncsi8k0cm2ufh1df0wjvo.jpg"
+                      alt=""
+                    />
                   </div>
                   <h4>Сфера обслуживания</h4>
                 </div>
@@ -2239,15 +2293,142 @@
           </div>
         </div>
       </section>
+      <section class="projects-section">
+        <div class="container">
+          <h2 class="section-title">Реализованные проекты</h2>
 
-      <section class="faq-section">
+          <div class="projects-grid">
+            <div class="project-card">
+              <img
+                src="https://mirbelogorya.ru/images/fbn14122018-656.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Белгородской обл.</h3>
+                <p>Станция обезжелезивания воды 2750 м³/сутки</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://cdn.er.ru/media/news/November2020/UDaoyqASid22RuQk930Q.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Липецкой обл.</h3>
+                <p>Станция водоподготовки производительностью 240 м³/ч</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://asmobel.ru/media/uploads/dji_0289.max-1920x1080.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Белгородской обл.</h3>
+                <p>Блочно-модульная станция обезжелезивания 1000 м³/сутки</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://www.belpressa.ru/media/filer_public_thumbnails/filer_public/b4/ea/b4ea2c38-567c-440c-b1e9-104a242a938c/_zv_6449_cr.jpg__650x486_q75_subsampling-2_upscale.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Липецкой обл.</h3>
+                <p>Станция водоподготовки производительностью 240 м³/ч</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://mirbelogorya.ru/images/fbn14122018-656.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Белгородской обл.</h3>
+                <p>Станция обезжелезивания воды 2750 м³/сутки</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://cdn.er.ru/media/news/November2020/UDaoyqASid22RuQk930Q.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Липецкой обл.</h3>
+                <p>Станция водоподготовки производительностью 240 м³/ч</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://asmobel.ru/media/uploads/dji_0289.max-1920x1080.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Белгородской обл.</h3>
+                <p>Блочно-модульная станция обезжелезивания 1000 м³/сутки</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://www.belpressa.ru/media/filer_public_thumbnails/filer_public/b4/ea/b4ea2c38-567c-440c-b1e9-104a242a938c/_zv_6449_cr.jpg__650x486_q75_subsampling-2_upscale.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Липецкой обл.</h3>
+                <p>Станция водоподготовки производительностью 240 м³/ч</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://mirbelogorya.ru/images/fbn14122018-656.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Белгородской обл.</h3>
+                <p>Станция обезжелезивания воды 2750 м³/сутки</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://cdn.er.ru/media/news/November2020/UDaoyqASid22RuQk930Q.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Липецкой обл.</h3>
+                <p>Станция водоподготовки производительностью 240 м³/ч</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://asmobel.ru/media/uploads/dji_0289.max-1920x1080.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Белгородской обл.</h3>
+                <p>Блочно-модульная станция обезжелезивания 1000 м³/сутки</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://www.belpressa.ru/media/filer_public_thumbnails/filer_public/b4/ea/b4ea2c38-567c-440c-b1e9-104a242a938c/_zv_6449_cr.jpg__650x486_q75_subsampling-2_upscale.jpg"
+                alt=""
+              />
+              <div class="project-overlay">
+                <h3>Водозабор Липецкой обл.</h3>
+                <p>Станция водоподготовки производительностью 240 м³/ч</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="faq-section">
         <div class="container">
           <h2 class="section-title">ЧАСТЫЕ ВОПРОСЫ О РАБОТЕ С НАМИ</h2>
           <p class="faq-subtitle">Отвечаем честно и по существу</p>
 
           <div class="faq-grid">
             <!-- 1 -->
-            <div class="faq-item active">
+            <div class="faq-item">
               <button class="faq-question">
                 Чем вы отличаетесь от обычного бизнес-консалтинга?
                 <span class="faq-icon">
@@ -2423,7 +2604,181 @@
           </div>
         </div>
       </section>
-      <section class="cta-section">
+      <section class="second-section">
+        <div class="container">
+          <div class="second-section__inner">
+            <!-- Left Card: Product Rating -->
+            <div class="card">
+              <div class="card-content">
+                <div>
+                  <div>
+                    <h2 class="card-title">
+                       Выполнено более 125 объектов
+                    </h2>
+                    <p class="card-subtitle">
+                      Полный перечень с отзывами можно запросить по почте
+                    </p>
+                  </div>
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#price-form"
+                    class="card-button card-button-learn"
+                  >
+                    <span class="button-children" data-modal-open
+                      >Онлайн-запрос</span
+                    >
+                  </a>
+                </div>
+
+                <div class="stars-wrapper">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/022/877/510/non_2x/3d-icon-of-contact-free-png.png"
+                    alt="Stars"
+                    class="stars-image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Card: Contact Center -->
+            <div class="card">
+              <div class="card-content">
+                <h2 class="card-title">Свяжитесь с нами</h2>
+                <p class="card-subtitle">Мы к вашим услугам 24/7</p>
+
+                <div>
+                  <a href="tel:+79013039222" class="contact-phone"
+                    > +7 473 228-74-10
+                  </a>
+                </div>
+                <div class="contact-social">
+                  <a href="https://yandex.com/maps/-/CPQoBC4~" target="_blank" class="contact-social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="M341.476 338.285c54.483-85.493 47.634-74.827 49.204-77.056C410.516 233.251 421 200.322 421 166 421 74.98 347.139 0 256 0 165.158 0 91 74.832 91 166c0 34.3 10.704 68.091 31.19 96.446l48.332 75.84C118.847 346.227 31 369.892 31 422c0 18.995 12.398 46.065 71.462 67.159C143.704 503.888 198.231 512 256 512c108.025 0 225-30.472 225-90 0-52.117-87.744-75.757-139.524-83.715zm-194.227-92.34a15.57 15.57 0 0 0-.517-.758C129.685 221.735 121 193.941 121 166c0-75.018 60.406-136 135-136 74.439 0 135 61.009 135 136 0 27.986-8.521 54.837-24.646 77.671-1.445 1.906 6.094-9.806-110.354 172.918L147.249 245.945zM256 482c-117.994 0-195-34.683-195-60 0-17.016 39.568-44.995 127.248-55.901l55.102 86.463a14.998 14.998 0 0 0 25.298 0l55.101-86.463C411.431 377.005 451 404.984 451 422c0 25.102-76.313 60-195 60z"
+                      fill="#fff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                    <path
+                      d="M256 91c-41.355 0-75 33.645-75 75s33.645 75 75 75 75-33.645 75-75-33.645-75-75-75zm0 120c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z"
+                      fill="#fff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/74732287410"
+                target="_blank"
+                rel="noopener"
+                class="contact-social-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"
+                      fill="#fffefe"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                    <path
+                      d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 0 1 7.021 2.91 9.788 9.788 0 0 1 2.909 6.99z"
+                      fill="#fffefe"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="" class="contact-social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"
+                      fill="#ffffff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:akvainvest@inbox.ru" class="contact-social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="512"
+                  height="512"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="M467 76H45C20.238 76 0 96.149 0 121v270c0 24.86 20.251 45 45 45h422c24.762 0 45-20.149 45-45V121c0-24.857-20.248-45-45-45zm-6.91 30L267.624 299.094c-5.864 5.882-17.381 5.886-23.248 0L51.91 106h408.18zM30 385.485v-258.97L159.065 256 30 385.485zM51.91 406l128.334-128.752 42.885 43.025c17.574 17.631 48.175 17.624 65.743 0l42.885-43.024L460.09 406H51.91zM482 385.485 352.935 256 482 126.515v258.97z"
+                      fill="#ffffff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="cta-section">
         <div class="cta-container">
           <div class="cta-bg"></div>
           <div class="cta-overlay"></div>
@@ -2523,45 +2878,52 @@
           </div>
         </div>
       </section>
-      <!-- <section class="map">
-        <div id="map">
-        </div>
-      </section> -->
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
           <div class="footer-col">
-            <h4>
-              <a href="#">Главная</a>
-            </h4>
-          </div>
-
-          <div class="footer-col">
-            <h4>О нас</h4>
-            <a href="#">Реквизиты</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Наша команда</a>
-          </div>
-
-          <div class="footer-col">
-            <h4>Услуги</h4>
-            <a href="#">Услуга №1</a>
-            <a href="#">Услуга №2</a>
-            <a href="#">Услуга №3</a>
+            <h4>Навигация</h4>
+            <a href="#top">Главная</a>
+            <a href="#about">О нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#directions">Направления</a>
+            <a href="#texts">Статьи</a>
+            <a href="#faq">Вопросы и ответы</a>
+            <a href="#contacts">Контакты</a>
           </div>
 
           <div class="footer-col">
             <h4>Контакты</h4>
-            <a href="#">Вопросы и ответы</a>
-            <a href="#">Галерея</a>
-            <a href="#">Цены</a>
+            <a href="tel:+74732287410">+7 (473) 228‑74‑10</a>
+            <a href="mailto:akvainvest@inbox.ru">akvainvest@inbox.ru</a>
+            <a href="https://yandex.com/maps/-/CPQoBC4~" target="_blank">
+              г. Воронеж, ул. Солнечная, 31а, БЦ «Солнечный альянс»
+            </a>
+            <a href="#contacts">Пн–Вс: Круглосуточно</a>
           </div>
 
           <div class="footer-col">
-            <h4>Статьи</h4>
-            <a href="#">Новости</a>
-            <a href="#">Регистрация</a>
+            <h4>Реквизиты (пример)</h4>
+            <a href="#">ИП Иванов Иван Иванович</a>
+            <a href="#">ИНН 123456789012</a>
+            <a href="#">ОГРНИП 123456789012345</a>
+            <a href="#">Р/с 40702 810 0 0000 0000000</a>
+            <a href="#">Банк: ПАО «Банк пример»</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Документы</h4>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Согласие на обработку персональных данных</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Мы на связи</h4>
+            <a href="https://wa.me/74732287410" target="_blank">WhatsApp</a>
+            <a href="#" target="_blank">Telegram</a>
+            <a href="mailto:akvainvest@inbox.ru">Электронная почта</a>
           </div>
         </div>
 
@@ -2711,38 +3073,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="/assests/main.js"></script>
-    <!-- <script
-      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <script type="text/javascript">
-      function init() {
-        let center = [51.687079, 39.164782];
-        let map = new ymaps.Map("map", {
-          center: center,
-          zoom: 14,
-        });
-
-        let placemark = new ymaps.Placemark(
-          center,
-          {},
-          {
-            iconLayout: "default#image",
-            iconImageHref: "/assests/img/marker.png",
-            iconImageSize: [40, 50],
-            iconImageOffset: [-42, -65],
-          }
-        );
-
-        map.controls.remove("geolocationControl");
-        map.controls.remove("searchControl");
-        map.controls.remove("trafficControl");
-        map.controls.remove("typeSelector");
-        map.controls.remove("fullscreenControl");
-        map.controls.remove("rulerControl");
-        map.geoObjects.add(placemark);
-      }
-      ymaps.ready(init);
-    </script> -->
   </body>
 </html>
