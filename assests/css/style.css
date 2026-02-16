@@ -1838,6 +1838,12 @@ header svg {
 .service-card:hover img {
   transform: scale(1.08);
 }
+@media (max-width:1330px){
+  .header nav ul li a {
+    padding: 20px 10px;
+    font-size: 14px;
+}
+}
 @media (max-width: 1200px) {
   .projects-grid {
     display: grid;
